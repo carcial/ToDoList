@@ -43,6 +43,7 @@ section{
 }
 #input-element{
     width: 80%;
+    padding: 10px;
 }
 #btn-click{
 	width: 90px;
