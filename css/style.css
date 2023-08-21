@@ -1,0 +1,81 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif; 
+}
+
+h1{
+	color: blue;
+
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #99CC00;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+section{
+	width: 50%;
+	margin: auto;
+	margin-top: 80px;
+	border: 2px solid #99CC00;
+	border-radius: 25px;
+	box-shadow: 10px 10px #CCCCCC;
+}
+
+.header-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-for-text-btn{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+#input-element{
+    width: 80%;
+}
+#btn-click{
+	width: 90px;
+	color: white;
+	background: blue;
+	font-weight: bold;
+	border: blue;
+	border-radius: 8px;
+}
+#deleteFunc{
+	width: 90px;
+	color: white;
+	background: #CC0033;
+	font-weight: bold;
+	border: #CC0033;
+	border-radius: 8px;
+}
+#list-btn{
+	margin: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+@media (max-width: 850px){
+
+	#input-element{
+    width: 60%;
+    }
+
+    section{
+    	width: 80%;
+    }
+
+}
