@@ -8,9 +8,13 @@ let test = []
 let allPlans = []
 
 
+
+const key = localStorage.key(0)
+console.log("key:  "+key)
+
 //this is use to display the localstorage 
 //even if the window is refreshed
-let st = JSON.parse(localStorage.getItem("allPlans"))
+let st = localStorage.getItem(key)
 
 if(st){
     allPlans = st
@@ -44,14 +48,13 @@ saveBtn.addEventListener("click", () => {
 function render(){
      let todo = localStorage.getItem("todo")
 
-    if (todo == null) {
+    if (todo === null) {
         allPlans = []
     }
     else{
         allPlans = JSON.parse(todo)
     }
     let listen = ""
-
 
     for(let i = 0; i < allPlans.length; i++){
 
@@ -64,7 +67,6 @@ function render(){
                    inputElemt.value =""            
         }
     }
-    console.log("hello")
     newList.innerHTML = listen
 
 }
